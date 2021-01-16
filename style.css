@@ -1,5 +1,6 @@
 /* Import */
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
 /* Root */
 :root{
     --very-dark-blue:#2d3248;
@@ -7,23 +8,49 @@
     --dark-gray-blue:#6a6f81;
     --neutral-gray:#969696;
 }
+
 /* Reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* Global */
-body{
 
+ul{
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
 }
-
-html{
+/* Global */
+body, html{
     font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    height: 100%;
 }
 
 /* Background images */
-
+.container{
+    background: var(--dark-cyan);
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.circle-top{
+    position: absolute;
+    top: -50%;
+    right: 50%;
+    z-index: 9;
+}
+.circle-bottom{
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    z-index: 9;
+}
 /* Card Profile */
 
 /* Attribution */
