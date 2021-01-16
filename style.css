@@ -67,7 +67,7 @@ body, html{
     position: relative;
     z-index: 10;
 
-    width: 325px;
+    width: 335px;
     height: 380px;
 
     display: flex;
@@ -120,4 +120,16 @@ body, html{
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+.number{
+    font-weight: 700;
+}
+
+.social-description{
+    margin-top: 0.3rem;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--dark-gray-blue);
+    letter-spacing: 0.1rem;
 }
