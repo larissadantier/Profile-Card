@@ -28,7 +28,10 @@ ul{
 }
 /* Global */
 body{
-    background: var(--dark-cyan);
+    background-image:url(../images/bg-pattern-top.svg),url(../images/bg-pattern-bottom.svg);
+    background-position: right 50vw bottom 50vh,50vw 50vh;
+    background-repeat: no-repeat;
+    background-color: var(--dark-cyan);
     font-family: 'Kumbh Sans', sans-serif;
     width: 100vw;
     height: 100vh;
@@ -40,7 +43,6 @@ body{
 
     color: var(--very-dark-blue);
 }
-
 html{
     font-size: 18px;
 }
