@@ -10,7 +10,9 @@
 }
 
 /* Reset */
-*{
+*,
+*::after,
+*::before{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -25,55 +27,52 @@ ul{
     padding-inline-start: 0;
 }
 /* Global */
-body, html{
+body{
+    background: var(--dark-cyan);
     font-family: 'Kumbh Sans', sans-serif;
-    font-size: 18px;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    color: var(--very-dark-blue);
 }
 
-/* Background images */
-.container{
-    background: var(--dark-cyan);
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
+html{
+    font-size: 18px;
 }
+/* Background Circle */
 .circle-top{
     position: absolute;
     top: -50%;
     right: 50%;
     z-index: 9;
 }
+
 .circle-bottom{
     position: absolute;
     bottom: -50%;
     left: 50%;
     z-index: 9;
 }
-/* Card Profile */
-.content{
+
+/* Card */
+.card-profile{
     display: flex;
     justify-content: center;
-    align-items: center;
-
-    height: 100%;
-}
-.card-profile{
-    background: #FFF url(/images/bg-pattern-card.svg) no-repeat;
-    color: var(--very-dark-blue);
-    border-radius: 15px;
+    flex-direction: column;
+    text-align: center;
 
     position: relative;
-    z-index: 10;
-
+    background: #FFF url(/images/bg-pattern-card.svg) no-repeat;
     width: 335px;
-    height: 380px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 385px;
+    z-index: 10;
+    
+    border-radius: 1rem;
 }
 
 .photo-profile img{
@@ -83,7 +82,7 @@ body, html{
 }
 
 .name-profile{
-    padding-top: 1rem;
+    padding-top: 0.8rem;
     font-size: 20px;
     font-weight: 700;
 }
@@ -114,7 +113,7 @@ body, html{
     justify-content: space-around;
 }
 
-.item-social-information{
+.social-profile{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     display: flex;
@@ -126,10 +125,17 @@ body, html{
     font-weight: 700;
 }
 
-.social-description{
+.social-information{
     margin-top: 0.3rem;
-    font-size: 12px;
-    font-weight: 400;
-    color: var(--dark-gray-blue);
+    font-size: 14px;
     letter-spacing: 0.1rem;
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
